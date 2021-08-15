@@ -1,0 +1,22 @@
+@import '../../styles/abstracts/';
+
+.spinner {
+  margin: 0 auto;
+  width: $size-two-hundred-half;
+  height: $size-two-hundred-half;
+  animation: rotate 3s;
+  animation-iteration-count: infinite;
+
+  &__img {
+    background-image: url('../../assets/img/checkbox-img-primary.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    transition: all .5s;
+
+    &:hover{
+      filter: brightness(-100%);
+    }
+  }
+}
