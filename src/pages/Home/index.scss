@@ -2,7 +2,6 @@
 @import '../../styles/base/';
 
 #home-page {
-  width: 100%;
-  padding-top: $navbar-height;
-  background-color: $gray-light;  
+
+  @include page-default;
 }

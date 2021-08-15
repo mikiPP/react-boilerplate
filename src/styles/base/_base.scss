@@ -33,12 +33,6 @@ html {
 body {
   box-sizing: border-box;
   line-height: 1.5;
-  cursor: url('../../assets/img/campanilla2.png') 2 2, auto;
-  
-  h1 {
-    color: $primary;
-    font-size: $font-heading;
-  }
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -73,31 +67,6 @@ p,label,small,span,a,input,textarea {
 .heading {
   font-family: $font-family-title;
   font-size: $font-family-title;
-}
-
-// SCROLLBAR STYLES
-
-::-webkit-scrollbar {
-  width: $size-xl;
-  height: 100%;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: $gray-light;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-image: url(../../assets/img/olaf.png);
-  background-size: contain;
-  background-color: $accent;
-  background-position: center;
-  border-radius: $size-lg;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-  height: 50px;
 }
 
 //SELECTION STYLES 

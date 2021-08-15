@@ -1,4 +1,6 @@
 @import './screens';
+@import './colors';
+@import './sizes';
 
 
 @mixin abs-center {
@@ -12,6 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin page-default {
+  min-height: 100vh;
+  padding-top: $navbar-height;
+  background-color: $gray-light;
 }
 
 /*
