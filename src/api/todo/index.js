@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { generateUUID } from '../../utils/functions';
 
-const BASE_PATH = 'https://u474p6cdp8.execute-api.eu-west-3.amazonaws.com/dev';
+const BASE_PATH = 'url';
 
 export const getTodos = (queryParams) =>
   new Promise((resolve, reject) => {

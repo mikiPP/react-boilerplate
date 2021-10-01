@@ -9,8 +9,8 @@
   box-sizing: inherit;
 }
 
-html, body, #root, .app {
-  height: 100%;
+.app {
+  background-color: $gray-light;
 }
 
 html {
@@ -61,12 +61,18 @@ h1,h2,h3 {
 p,label,small,span,a,input,textarea {
   font-family: $font-family-text;
   font-size: $font-default;
-  font-weight: 300;
+  font-weight: $font-slim;
 }
 
 .heading {
   font-family: $font-family-title;
   font-size: $font-family-title;
+  font-weight: $font-bold;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 //SELECTION STYLES 
