@@ -1,5 +1,4 @@
-@import '../../styles/abstracts';
-@import '../../styles/base';
+@import '../../styles/';
 
 .navbar{
   height: $navbar-height;
@@ -32,7 +31,7 @@
   
   &__title {
     font-family: $font-family-title;
-    font-weight: 700;
+    font-weight: $font-bold;
     font-size: $font-title;
     color: $white;
   }

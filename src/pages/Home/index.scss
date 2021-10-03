@@ -1,7 +1,10 @@
-@import '../../styles/abstracts/';
-@import '../../styles/base/';
+@import '../../styles/';
 
 #home-page {
 
   @include page-default;
+
+  .slider-wrapper {
+    height: calc(100vh - #{$navbar-height});
+  }
 }

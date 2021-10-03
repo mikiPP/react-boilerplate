@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Main from './pages/Main';
 import reportWebVitals from './reportWebVitals';
-import './styles/main.scss';
+import './styles/index.scss';
 
 ReactDOM.render(
   // eslint-disable-next-line react/jsx-filename-extension
