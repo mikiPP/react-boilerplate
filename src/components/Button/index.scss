@@ -10,11 +10,16 @@
   overflow: hidden;
   cursor: pointer;
 
+  &:disabled {
+    cursor: not-allowed;
+    color: $gray;
+  }
+
 
   @mixin pseudo-line {
     content: "";
     display: block;
-    background-color: $accent;
+    background-color: currentColor;
     position: absolute;
     transition: all .5s;
   }
