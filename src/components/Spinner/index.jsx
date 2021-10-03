@@ -3,7 +3,10 @@ import './index.scss';
 
 const Spinner = () => (
   <div className="spinner">
-    <div className="spinner__img" />
+    <div className="spinner__outer" />
+    <div className="spinner__middle" />
+    <div className="spinner__inner" />
+    <div className="spinner__center" />
   </div>
 );
 
