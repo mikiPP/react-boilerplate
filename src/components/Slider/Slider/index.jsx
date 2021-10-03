@@ -113,8 +113,7 @@ const Slider = ({ images, indexToShow }) => {
       const position = 'mousemove' === e.type ? e.pageX : e?.changedTouches?.[ZERO]?.pageX;
       const difference = position - startTouchPosition;
       const newTransition = (transition - dragTransition) + difference;
-      // eslint-disable-next-line no-console
-      console.log(e.type);
+
       if (ZERO > newTransition && Math.abs(newTransition) < width * (state.images.length - 1)) {
         setTransition(newTransition);
         setDragTransition(difference);
