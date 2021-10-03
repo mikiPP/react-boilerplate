@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import './styles/index.scss';
 
 ReactDOM.render(
-  // eslint-disable-next-line react/jsx-filename-extension
   <React.StrictMode>
     <BrowserRouter>
       <Main />

@@ -57,7 +57,7 @@
     "standard": "^16.0.3"
   },
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "keywords": [],
   "author": "",
   "license": "ISC"
