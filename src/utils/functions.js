@@ -19,6 +19,10 @@ export const isEmpty = (element) => {
   if ('object' === typeof element) {
     return !(Object.keys(element).length);
   }
-  
+
   return !element;
 };
+
+export const isValidEmail = (email) => (/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/).test(email);
+
+export const isValidPassword = (password) => (/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/).test(password);
