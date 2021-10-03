@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import './index.scss';
 
-const Input = ({ id, onChange, placeholder, value }) => {
+const Input = ({ id, onChange, placeholder, type, value }) => {
   const [ inputValue, setInputValue ] = useState(value);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Input = ({ id, onChange, placeholder, value }) => {
     <div className="input">
       <input
         id={id}
-        type="text"
+        type={type}
         value={inputValue}
         className={`input__tag ${inputValue ? 'input-with-value' : null}`}
         onChange={(event) => {
@@ -32,12 +32,14 @@ Input.defaultProps = {
   value: null,
   onChange: () => true,
   placeholder: '',
+  type: 'text',
 };
 
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  type: PropTypes.string,
   value: PropTypes.any,
 };
 
