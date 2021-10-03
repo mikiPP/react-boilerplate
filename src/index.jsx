@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { AuthContextProvider } from './contexts/authContext';
 
 import Main from './pages/Main';
 import reportWebVitals from './reportWebVitals';
@@ -9,7 +10,9 @@ import './styles/index.scss';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Main />
+      <AuthContextProvider>
+        <Main />
+      </AuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
