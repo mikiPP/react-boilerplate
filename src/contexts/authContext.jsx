@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { useSessionStorage } from '../hooks/useStorage';
 
 export const initialValue = {
   email: null,
@@ -9,9 +10,7 @@ export const initialValue = {
 const AuthContext = React.createContext(initialValue);
 
 export const AuthContextProvider = ({ children }) => {
-  const [ email, setEmail ] = useState('');
-
-  // TODO: CREATE CUSTOM HOOK LOOK AT SIMPLIFIED WEB TO ACCESS TO LOCAL STORATGE AND GET EMAIL AFTER RELOAD
+  const [ email, setEmail ] = useSessionStorage('email', '');
 
   return (
     <AuthContext.Provider
