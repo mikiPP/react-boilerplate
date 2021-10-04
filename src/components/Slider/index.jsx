@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import './index.scss';
-import { LEFT_ARROW_KEY_CODE, RIGHT_ARROW_KEY_CODE, ZERO } from '../../../utils/constants';
+import { LEFT_ARROW_KEY_CODE, RIGHT_ARROW_KEY_CODE, ZERO } from '../../utils/constants';
 
 const NEXT_SLIDE = 'nextSlide';
 const PREV_SLIDE = 'prevSlide';
